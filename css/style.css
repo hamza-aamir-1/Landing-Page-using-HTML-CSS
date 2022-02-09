@@ -72,6 +72,23 @@ body{
     font-size: 20px;
 }
 
+/* Heading */
+.heading{
+    color: var(--dark_black);
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+.heading::after {
+    content:'';
+    position: absolute;
+    background-color: var(--black);
+    width: 6%;
+    height: 2px;
+    bottom: 0;
+    left: 47%;
+}
+
 /* Text */
 .text{
     color: var(--light_black);
@@ -158,6 +175,24 @@ body{
     padding-bottom: 10px;
 }
 
+/* Our Services */
+.our_services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../img/Vector.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.our_services_heading{
+    text-align: center;
+}
+.our_services_text{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1200px) {
     /* Button */
@@ -171,6 +206,12 @@ body{
     }
     .hero_heading{
         font-size: 2rem;
+    }
+
+    /* Our Services */
+    .our_services_text{
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -192,12 +233,28 @@ body{
     .hero_heading{
         font-size: 2rem;
     }
+
+    /* Our Services */
+    .our_services_text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     /* Logo */
     .logo_icon, .logo_text{
         font-size: 18px;
+    }
+
+    /* Heading */
+    .heading{
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    .heading::after {
+        width: 10%;
+        left: 45%;
     }
 
     /* Text */
@@ -240,6 +297,12 @@ body{
         padding-bottom: 30px;
     }
     .hero_heading{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+    }
+
+    /* Our Services */
+    .our_services_text{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
