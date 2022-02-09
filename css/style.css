@@ -72,6 +72,42 @@ body{
     font-size: 20px;
 }
 
+/* Text */
+.text{
+    color: var(--light_black);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Button */
+.btn, .btn_outline{
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    border: 2px solid var(--blue);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.btn{
+    color: white;
+    background-color: var(--blue);
+}
+.btn_outline{
+    color: var(--blue);
+    background-color: var(--white);
+}
+.btn:hover{
+    background-color: var(--blue);
+    padding: 10px 30px;
+}
+.btn_outline:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 30px;
+}
+
 /* Navbar */
 .navbar{
     padding-top: 20px;
@@ -106,14 +142,75 @@ body{
     display: none;
 }
 
+/* Hero Section */
+.hero_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_content{
+    padding-right: 70px;
+}
+.hero_heading{
+    font-size: 2.3rem;
+}
+.hero_text{
+    padding-bottom: 10px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1200px) {
-    
+    /* Button */
+    .btn, .btn_outline{
+        padding: 8px 20px;
+    }
+
+    /* Hero Section */
+    .hero_content{
+        padding-right: 50px;
+    }
+    .hero_heading{
+        font-size: 2rem;
+    }
 }
+
 @media screen and (max-width: 992px) {
-    
+    /* Hero Section */
+    .hero_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_img{
+        padding: 0% 15%;
+    }
+    .hero_content{
+        padding: 25px 20px;
+        order: 2;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .hero_heading{
+        font-size: 2rem;
+    }
 }
+
 @media screen and (max-width: 768px) {
+    /* Logo */
+    .logo_icon, .logo_text{
+        font-size: 18px;
+    }
+
+    /* Text */
+    .text{
+        font-size: 14px;
+    }
+
+    /* Button */
+    .btn, .btn_outline{
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
     /* Navbar */
     .navbar_items{
         display: none;
@@ -126,5 +223,23 @@ body{
     }
     .nav_menu:hover{
         transform: scale(1.1, 1.1);
+    }
+
+    /* Hero Section */
+    .hero_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_img{
+        padding: 0% 10%;
+    }
+    .hero_content{
+        padding: 20px 10px;
+        order: 2;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .hero_heading{
+        font-size: 1.8rem;
     }
 }
