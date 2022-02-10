@@ -239,6 +239,12 @@ body{
     left: 0;
 }
 
+/* Download App */
+.download_app_content{
+    width: 60%;
+    padding-right: 50px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1200px) {
     /* Button */
@@ -274,6 +280,12 @@ body{
         bottom: 0;
         left: 0;
     }
+
+    /* Download App */
+    .download_app_content{
+        width: 60%;
+        padding-right: 50px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -283,7 +295,7 @@ body{
         flex-direction: column;
     }
     .hero_img{
-        padding: 0% 15%;
+        padding: 0% 20%;
     }
     .hero_content{
         padding: 25px 20px;
@@ -312,6 +324,7 @@ body{
         width: 100%;
         padding-left: 0px;
         text-align: center;
+        padding-top: 40px;
     }
     .leading_health_heading{
         font-size: 1.8rem;
@@ -321,6 +334,15 @@ body{
         height: 2px;
         bottom: 0;
         left: 43%;
+    }
+
+    /* Download App */
+    .download_app_content{
+        width: 100%;
+        order: 2;
+        padding-top: 40px;
+        padding-right: 0px;
+        text-align: center;
     }
 }
 
@@ -405,11 +427,6 @@ body{
     }
 
     /* Leading Healthcare */
-    .leading_health_content{
-        width: 100%;
-        padding-left: 0px;
-        text-align: center;
-    }
     .leading_health_heading{
         font-size: 1.5rem;
     }
